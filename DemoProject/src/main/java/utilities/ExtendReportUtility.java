@@ -6,7 +6,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class ExtendReportUtility {
 	public static final ExtentReports extentReports = new ExtentReports();
 
-	public synchronized static ExtentReports createExtentReports() {
+	public synchronized static ExtentReports createExtentReports() {//call from Listerners class
 		ExtentSparkReporter reporter = new ExtentSparkReporter("./extent-reports/extent-report.html");
 		reporter.config().setReportName("DEMO Project");
 		extentReports.attachReporter(reporter);

@@ -41,27 +41,32 @@ public void adminUsersInfoPwd(String password)
 {
 	newuserspassword.sendKeys(password);
 }
-public void adminUsersTypeSelect(String dropdown)
+public void adminUsersTypeSelect(String value)
 {
 //	Select select=new Select(selectuser);
 //	select.selectByIndex(2);
 	//Select select=new Select(selectuser);
 	//select.selectByVisibleText(dropdown);
 	//PageUtility pageutility=new PageUtility();
-	pageutility.selectByVisibleText(selectuser, dropdown);//webelement name,value selected from dropdown
+	//pageutility.selectByVisibleText(selectuser, dropdown);//webelement name,value selected from dropdown
+	pageutility.selectByVisibleText(selectuser, value);
 			
 	
 }
 public void saveAdminUsersInfo()
 {
-	//savebutton.click();
-	pageutility.mouseClick(savebutton);
+	savebutton.click();
+	//pageutility.mouseClick(savebutton);
 }
-public boolean userAlreadyExistAlertdisplayed()
+/*public void newAddedUserLogin()
+{
+	newusersusername
+}*/
+/*public boolean userAlreadyExistAlertdisplayed()
 {
 	return alertalreadyexist.isDisplayed();
 	
-}
+}*/
 public boolean successfullAlertdisplayed()
 {
 	return successfulalert.isDisplayed();

@@ -10,7 +10,7 @@ import utilities.ExcelUtility;
 
 
 public class LoginTest extends Base {
-	@Test(groups= {"regression"})//for regression testing
+	@Test(groups= {"regression"},description="LoginTest")//for regression testing,after
 	public void loginTest() throws IOException
 	{
 		//String username="admin";

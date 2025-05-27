@@ -36,7 +36,8 @@ public class ManageNewsTest extends Base{
 //		boolean ismanagenewsdispvar=managenewspage.isAlertMsgDisplayed();
 //		Assert.assertTrue(ismanagenewsdispvar);
 //}
-	@Test
+	//@Test(retryAnalyzer=retry.Retry_class.class)
+	@Test(retryAnalyzer=retry.Retry.class)
 	public void manageNewsmethod() throws IOException
 	{
 		//String username="admin";

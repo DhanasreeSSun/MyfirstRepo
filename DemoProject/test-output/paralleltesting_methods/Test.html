@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 23 09:46:50 IST 2025</td>
+<td>Started on:</td><td>Tue May 27 08:22:34 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8757 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23069 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -90,12 +90,12 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.util.zip.ZipException: Unexpected record signature: 0X6F725063
+Caused by: java.util.zip.ZipException: Unexpected record signature: 0XD952111D
 	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
 	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
 	... 21 more
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1271875198", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1271875198'><pre>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace72247503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace72247503'><pre>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
 	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
 	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:94)
 	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
@@ -118,15 +118,89 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0X6F725063
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.util.zip.ZipException: Unexpected record signature: 0X6F725063
+Caused by: java.util.zip.ZipException: Unexpected record signature: 0XD952111D
 	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
 	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
 	... 21 more
 </pre></div></td>
 <td>0</td>
-<td>testscript.LoginTest@409bf450</td></tr>
+<td>testscript.LoginTest@475c9c31</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='testscript.LoginTest.correctuidIncorrectpwd()'><b>correctuidIncorrectpwd</b><br>Test class: testscript.LoginTest</td>
+<td title='testscript.AdminUsersTest.adminUsersTest()'><b>adminUsersTest</b><br>Test class: testscript.AdminUsersTest</td>
+<td></td>
+<td>7</td>
+<td>testscript.AdminUsersTest@23941fb4</td></tr>
+<tr>
+<td title='testscript.ManageNewsTest.manageNewsmethod()'><b>manageNewsmethod</b><br>Test class: testscript.ManageNewsTest</td>
+<td></td>
+<td>6</td>
+<td>testscript.ManageNewsTest@7486b455</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testscript.AdminUsersTest.adminUsersTest()'><b>adminUsersTest</b><br>Test class: testscript.AdminUsersTest</td>
+<td><div><pre>org.apache.poi.EmptyFileException: The supplied file was empty (zero bytes long)
+	at org.apache.poi.util.IOUtils.peekFirstNBytes(IOUtils.java:144)
+	at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+	at org.apache.poi.openxml4j.opc.internal.ZipHelper.verifyZipHeader(ZipHelper.java:143)
+	at org.apache.poi.openxml4j.opc.internal.ZipHelper.openZipStream(ZipHelper.java:175)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:130)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
+	at utilities.ExcelUtility.getStringData(ExcelUtility.java:23)
+	at testscript.AdminUsersTest.adminUsersTest(AdminUsersTest.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace820141403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace820141403'><pre>org.apache.poi.EmptyFileException: The supplied file was empty (zero bytes long)
+	at org.apache.poi.util.IOUtils.peekFirstNBytes(IOUtils.java:144)
+	at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+	at org.apache.poi.openxml4j.opc.internal.ZipHelper.verifyZipHeader(ZipHelper.java:143)
+	at org.apache.poi.openxml4j.opc.internal.ZipHelper.openZipStream(ZipHelper.java:175)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:130)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
+	at utilities.ExcelUtility.getStringData(ExcelUtility.java:23)
+	at testscript.AdminUsersTest.adminUsersTest(AdminUsersTest.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testscript.AdminUsersTest@23941fb4</td></tr>
+<tr>
+<td title='testscript.ManageNewsTest.manageNewsmethod()'><b>manageNewsmethod</b><br>Test class: testscript.ManageNewsTest</td>
 <td><div><pre>java.io.IOException: Stream Closed
 	at java.base/java.io.FileInputStream.available0(Native Method)
 	at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
@@ -151,12 +225,12 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0X6F725063
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
 	at utilities.ExcelUtility.getStringData(ExcelUtility.java:23)
-	at testscript.LoginTest.correctuidIncorrectpwd(LoginTest.java:30)
+	at testscript.ManageNewsTest.manageNewsmethod(ManageNewsTest.java:45)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1918900786", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1918900786'><pre>java.io.IOException: Stream Closed
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1817378137", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1817378137'><pre>java.io.IOException: Stream Closed
 	at java.base/java.io.FileInputStream.available0(Native Method)
 	at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
 	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:428)
@@ -180,7 +254,7 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0X6F725063
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
 	at utilities.ExcelUtility.getStringData(ExcelUtility.java:23)
-	at testscript.LoginTest.correctuidIncorrectpwd(LoginTest.java:30)
+	at testscript.ManageNewsTest.manageNewsmethod(ManageNewsTest.java:45)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -196,7 +270,7 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0X6F725063
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>testscript.LoginTest@409bf450</td></tr>
+<td>testscript.ManageNewsTest@7486b455</td></tr>
 </table><p>
 </body>
 </html>
