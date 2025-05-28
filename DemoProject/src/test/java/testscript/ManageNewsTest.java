@@ -5,7 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import page.LoginPage;
+import pages.LoginPage;
 import pages.ManageNewspage;
 import utilities.ExcelUtility;
 
@@ -47,7 +47,7 @@ public class ManageNewsTest extends Base{
 		LoginPage loginpage=new LoginPage(driver);
 		loginpage.enterUserName(username);
 		loginpage.enterPassword(password);
-		loginpage.clickTheSignInButton();
+		loginpage.clickSigninButton();
 //		boolean ishomepageavailable=loginpage.isDashBoardDisplayed();
 //		Assert.assertTrue(ishomepageavailable);//true
 		String news=ExcelUtility.getStringData(1, 0,"managenewspage");
