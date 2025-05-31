@@ -1,6 +1,6 @@
 package utilities;
 
-import java.util.Set;
+//import java.util.Set;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +21,7 @@ public class PageUtility {//to help page class method create common
 	{
 		Actions action=new Actions(driver);
 		
-		action.dragAndDrop(drag,drop).build().perform();
+		action.dragAndDrop(null,null).build().perform();
 	}
 	public void doubleClick(WebElement element)
 	{
@@ -36,7 +36,7 @@ public class PageUtility {//to help page class method create common
 	public void moveToElement(WebElement element)
 	{
 		Actions action=new Actions(driver);
-		action.moveToElement(element).build().perform();
+		action.moveToElement(null).build().perform();
 	}
 	public void mouseClick(WebElement element)
 	{
@@ -61,6 +61,12 @@ public class PageUtility {//to help page class method create common
 		js.executeScript("arguments[0].click();",element);
 		//click
 		//sendkeys
+		
+	}
+	public void scrollBy(WebDriver driver,int x,int y)
+	{
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(x,y)","");
 		
 	}
 }

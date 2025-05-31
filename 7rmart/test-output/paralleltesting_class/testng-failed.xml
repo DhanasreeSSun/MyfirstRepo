@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [paralleltesting_class]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="generatereport.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testscript.LogOutTest">
+        <methods>
+          <include name="quitAndClose"/>
+          <include name="initializeBrowser"/>
+          <include name="verifyLogoutButtonInLogoutAvatar"/>
+        </methods>
+      </class> <!-- testscript.LogOutTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [paralleltesting_class] -->
