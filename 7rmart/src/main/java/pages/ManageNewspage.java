@@ -17,34 +17,30 @@ public class ManageNewspage {
 		PageFactory.initElements(driver,this);//for initialize webelements
 	}
 	@FindBy(xpath="(//p[text()='Manage News']//parent::div)")WebElement managenews;
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news' and @class='small-box-footer']")WebElement moreinfo;
+	//@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news' and @class='small-box-footer']")WebElement ManageNewsmoreinfo;
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement news;
 	@FindBy(xpath="//textarea[@id='news']")WebElement enternews;
 	@FindBy(xpath="//button[@type='submit']")WebElement savebtn;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alertmsg;
 	
-	public void moreInfolink()
+//	public void moreInfolink()
+//	{
+//		 ManageNewsmoreinfo.click();	
+//	}
+	public ManageNewspage newsLink()
 	{
-		moreinfo.click();
-		
-		
-	}
-	public void newsLink()
-	{
-		
 		news.click();
-		
-		
+		return this;
 	}
-	public void newstext(String enterednews)
+	public ManageNewspage newstext(String enterednews)
 	{
-		
-		//enternews.sendKeys("Rain In Kerala");
 		enternews.sendKeys(enterednews);
+		return this;
 	}
-	public void savebutton()
+	public ManageNewspage savebutton()
 	{
 		savebtn.click();
+		return this;
 	}
 	public boolean isManageNewsDisplayed()
 	{

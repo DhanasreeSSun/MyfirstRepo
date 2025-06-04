@@ -38,19 +38,6 @@ public class ExcelUtility {
 		return String.valueOf(x);
 		
 	}
-	
-	/*public static String getFloatData(float i, float j, String sheet) throws IOException
-	{
-		String filepath = Constants.TESTDATAFILE;		
-		f = new FileInputStream(filepath);
-		wb = new XSSFWorkbook(f);
-		sh = wb.getSheet(sheet);
-		Row r = sh.getRow((int) i);
-		Cell c = r.getCell((int) j);
-		float x = (float) c.getNumericCellValue();
-		return String.valueOf(x);
-		
-	}*/
 	public static String getLongData(int i, int j, String sheet) throws IOException
 	{
 		String filepath = Constants.TESTDATAFILE;		

@@ -7,13 +7,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testscript.LogOutTest">
+      <class name="testscript.ManageCategoryTest">
         <methods>
           <include name="initializeBrowser"/>
           <include name="quitAndClose"/>
-          <include name="verifyLogoutButtonInLogoutAvatar"/>
+          <include name="verifyitemselectedForDeletesuccessfullyDeleteFromListCategories"/>
         </methods>
-      </class> <!-- testscript.LogOutTest -->
+      </class> <!-- testscript.ManageCategoryTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -8,6 +8,7 @@
           <include name="initializeBrowser"/>
           <include name="quitAndClose"/>
           <include name="verifyItemsEnteredInManageCategoryPageShouldBeEnteredSuccessfully"/>
+          <include name="verifyitemselectedForDeletesuccessfullyDeleteFromListCategories"/>
         </methods>
       </class> <!-- testscript.ManageCategoryTest -->
     </classes>

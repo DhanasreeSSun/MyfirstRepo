@@ -7,13 +7,43 @@
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testscript.LogOutTest">
+      <class name="testscript.AdminUsersTest">
+        <methods>
+          <include name="initializeBrowser"/>
+          <include name="quitAndClose"/>
+          <include name="adminUsersTest"/>
+        </methods>
+      </class> <!-- testscript.AdminUsersTest -->
+      <class name="testscript.ManageCategoryTest">
+        <methods>
+          <include name="initializeBrowser"/>
+          <include name="quitAndClose"/>
+          <include name="verifyItemsEnteredInManageCategoryPageShouldBeEnteredSuccessfully"/>
+          <include name="verifyitemselectedForDeletesuccessfullyDeleteFromListCategories"/>
+        </methods>
+      </class> <!-- testscript.ManageCategoryTest -->
+      <class name="testscript.ManageContactTest">
         <methods>
           <include name="quitAndClose"/>
+          <include name="verifyContactDetailsUpdateSuccessfullyinContactUsPage"/>
           <include name="initializeBrowser"/>
-          <include name="verifyLogoutButtonInLogoutAvatar"/>
+          <include name="verifyUpdateButtoninContactUsPageDisplayedSuccessfully"/>
         </methods>
-      </class> <!-- testscript.LogOutTest -->
+      </class> <!-- testscript.ManageContactTest -->
+      <class name="testscript.HomeTest">
+        <methods>
+          <include name="verifyLogOutAvatarByClickOnIt"/>
+          <include name="quitAndClose"/>
+          <include name="initializeBrowser"/>
+        </methods>
+      </class> <!-- testscript.HomeTest -->
+      <class name="testscript.ManageNewsTest">
+        <methods>
+          <include name="initializeBrowser"/>
+          <include name="quitAndClose"/>
+          <include name="manageNewsmethod"/>
+        </methods>
+      </class> <!-- testscript.ManageNewsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [paralleltesting_class] -->
